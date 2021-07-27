@@ -1,0 +1,17 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url('WP_20160827_08_21_08_Pro.jpg') no-repeat center center;
+  background-size: cover;
+}
+#canvas-text {
+  text-transform: capitalize;
+  font-family: Arial, 'Trebuchet MS', Times;
+  Font-weight: bolder;
+  color: #000;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+}
