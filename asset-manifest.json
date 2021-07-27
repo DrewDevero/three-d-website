@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/three-d-website/static/css/main.1005af91.chunk.css",
+    "main.css": "/three-d-website/static/css/main.6f2cddfa.chunk.css",
     "main.js": "/three-d-website/static/js/main.7aefae60.chunk.js",
     "main.js.map": "/three-d-website/static/js/main.7aefae60.chunk.js.map",
     "runtime-main.js": "/three-d-website/static/js/runtime-main.39e2b30f.js",
@@ -10,14 +10,14 @@
     "static/js/3.86f14216.chunk.js": "/three-d-website/static/js/3.86f14216.chunk.js",
     "static/js/3.86f14216.chunk.js.map": "/three-d-website/static/js/3.86f14216.chunk.js.map",
     "index.html": "/three-d-website/index.html",
-    "static/css/main.1005af91.chunk.css.map": "/three-d-website/static/css/main.1005af91.chunk.css.map",
+    "static/css/main.6f2cddfa.chunk.css.map": "/three-d-website/static/css/main.6f2cddfa.chunk.css.map",
     "static/js/2.4ca80367.chunk.js.LICENSE.txt": "/three-d-website/static/js/2.4ca80367.chunk.js.LICENSE.txt",
     "static/media/style.css": "/three-d-website/static/media/WP_20160827_08_21_08_Pro.a5a746a7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.39e2b30f.js",
     "static/js/2.4ca80367.chunk.js",
-    "static/css/main.1005af91.chunk.css",
+    "static/css/main.6f2cddfa.chunk.css",
     "static/js/main.7aefae60.chunk.js"
   ]
 }
