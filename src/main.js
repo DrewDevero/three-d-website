@@ -90,9 +90,55 @@ export default function ThreeD() {
   Array(200).fill().forEach(addStar);
 
   // another way to add an image to the background
-  // const CANYON_TEXTURE = new THREE.TextureLoader().load('WP_20160827_08_21_08_Pro.jpg'); // can pass a callback function here as well to show a status bar for assets being loaded
-  // SCENE.background = CANYON_TEXTURE;
+  function addBackground() {
+    const BACKGROUND_TEXTURE = new THREE.TextureLoader();
+    
+    BACKGROUND_TEXTURE.load(
 
+      'pexels-francesco-ungaro-998641-space.jpg',
+
+      ( texture ) => {
+        let background = new THREE.MeshBasicMaterial( { texture } );
+      },
+      // can pass a callback function here as well to show a status bar for assets being loaded
+      // Function called when download progresses
+      ( xhr ) => {
+          console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+      },
+      // Function called when download errors
+      ( xhr ) => {
+          console.log( 'An error happened' );
+      }
+
+    );
+  }
+
+  addBackground();
+
+  function addBridge() {
+    const BROOKLYN_BRIDGE_TEXTURE = new THREE.TextureLoader();
+
+    BROOKLYN_BRIDGE_TEXTURE.load(
+      'three_d_react/src/WP_20170822_13_13_37_Pro.jpg',
+
+      ( texture ) => {
+        const BRIDGE = new THREE.Mesh(
+        new THREE.BoxGeometry(3,3,3),
+        new THREE.MeshBasicMaterial( { map: texture } )
+        );
+      },
+      // Function called when download progresses
+      ( xhr ) => {
+          console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+      },
+      // Function called when download errors
+      ( xhr ) => {
+          console.log( 'An error happened' );
+      }
+    )
+  }
+
+  addBridge();
 
   function animate() {
     requestAnimationFrame(animate);
